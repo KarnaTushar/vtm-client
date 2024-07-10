@@ -1,0 +1,453 @@
+/* styles/global.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.drivers-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.add-button {
+  padding: 10px 20px;
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-button:hover {
+  background-color: #005bb5;
+}
+
+.drivers-list {
+  list-style: none;
+  padding: 0;
+}
+
+.driver-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.driver-info {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.profile-photo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background-color: #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.profile-photo img {
+  width: 100%;
+  height: auto;
+}
+
+.profile-photo .default-avatar {
+  width: 24px;
+  height: 24px;
+}
+
+.edit-button {
+  padding: 5px 10px;
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.edit-button:hover {
+  background-color: #005bb5;
+}
+
+.driver-form-card {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.driver-form-card form {
+  display: flex;
+  flex-direction: column;
+}
+
+.driver-form-card label {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.driver-form-card input[type="text"],
+.driver-form-card input[type="file"] {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.driver-form-card button[type="submit"],
+.driver-form-card button[type="button"] {
+  padding: 10px 20px;
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.driver-form-card button[type="submit"]:hover,
+.driver-form-card button[type="button"]:hover {
+  background-color: #005bb5;
+}
+
+
+/* vehicles.css */
+
+.vehicles-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.add-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.add-button:hover {
+  background-color: #0056b3;
+}
+
+.vehicle-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.vehicle-item {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.vehicle-info {
+  display: flex;
+  align-items: center;
+}
+
+.vehicle-info img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.vehicle-details {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.vehicle-details h2 {
+  margin-left: 20;
+  font-size: 20px;
+}
+
+.vehicle-details p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.edit-button,
+.delete-button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+.edit-button:hover,
+.delete-button:hover {
+  background-color: #c82333;
+}
+
+@media (max-width: 600px) {
+  .vehicle-info img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .vehicle-details h2 {
+    font-size: 18px;
+  }
+
+  .vehicle-details p {
+    font-size: 14px;
+  }
+}
+
+.vehicle-form-card {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.vehicle-form-card form {
+  display: flex;
+  flex-direction: column;
+}
+
+.vehicle-form-card label {
+  margin-bottom: 10px;
+}
+
+.vehicle-form-card input[type='text'],
+.vehicle-form-card input[type='file'] {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.vehicle-form-card input[type='file'] {
+  margin-top: 5px;
+}
+
+.vehicle-form-card button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.vehicle-form-card button[type='submit'] {
+  background-color: #28a745;
+}
+
+.vehicle-form-card button[type='button'] {
+  background-color: #dc3545;
+}
+
+.vehicle-form-card button[type='submit']:hover,
+.vehicle-form-card button[type='button']:hover {
+  opacity: 0.8;
+}
+
+.vehicle-form-card button[type='submit']:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+.vehicle-form-card .form-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.vehicle-form-card .form-footer button {
+  padding: 8px 12px;
+  font-size: 14px;
+}
+
+.vehicle-form-card .form-footer button.cancel-btn {
+  background-color: #dc3545;
+}
+
+.vehicle-form-card .form-footer button.cancel-btn:hover {
+  background-color: #c82333;
+}
+
+.vehicle-form-card .form-footer button.close-btn {
+  background-color: #6c757d;
+}
+
+.vehicle-form-card .form-footer button.close-btn:hover {
+  background-color: #5a6268;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .vehicle-form-card {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .vehicle-form-card input[type='text'] {
+    font-size: 14px;
+  }
+  
+  .vehicle-form-card button {
+    font-size: 14px;
+  }
+}
+
+.transfer-list {
+  padding: 20px;
+}
+.btn {
+  padding: 10px 15px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn-primary {
+  background-color: #0070f3;
+  color: white;
+}
+.btn-search {
+  background-color: #28a745;
+  color: white;
+}
+.btn-cancel {
+  background-color: #dc3545;
+  color: white;
+}
+.input {
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.search-form {
+  margin-bottom: 20px;
+}
+.transfer-list-items,
+.drivers-list {
+  list-style-type: none;
+  padding: 0;
+}
+.transfer-item,
+.driver-item {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.driver-info {
+  display: flex;
+  align-items: center;
+}
+.profile-photo {
+  margin-right: 10px;
+}
+.profile-photo img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+.default-avatar {
+  background-color: #ccc;
+  width: 50px;
+  height: 50px;
+}
+
+.transfer-form {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+}
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.form-group {
+  margin-bottom: 15px;
+}
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.error {
+  color: red;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.btn {
+  padding: 10px 15px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn-primary {
+  background-color: #0070f3;
+  color: white;
+}
+.btn-cancel {
+  background-color: #dc3545;
+  color: white;
+}
